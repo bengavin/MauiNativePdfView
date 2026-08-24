@@ -120,7 +120,7 @@ public class PdfViewAndroid : IPdfView, IDisposable
             if (Math.Abs(_pdfView.Zoom - clamped) <= float.Epsilon)
                 return;
 
-            _pdfView.ZoomTo(clamped);
+            _pdfView.ZoomWithAnimation(clamped);
         }
     }
 
